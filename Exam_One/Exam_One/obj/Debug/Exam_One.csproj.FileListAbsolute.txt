@@ -1,0 +1,7 @@
+C:\Users\Jay\source\repos\Exam_One\Exam_One\bin\Debug\Exam_One.exe.config
+C:\Users\Jay\source\repos\Exam_One\Exam_One\bin\Debug\Exam_One.exe
+C:\Users\Jay\source\repos\Exam_One\Exam_One\bin\Debug\Exam_One.pdb
+C:\Users\Jay\source\repos\Exam_One\Exam_One\obj\Debug\Exam_One.csprojResolveAssemblyReference.cache
+C:\Users\Jay\source\repos\Exam_One\Exam_One\obj\Debug\Exam_One.csproj.CoreCompileInputs.cache
+C:\Users\Jay\source\repos\Exam_One\Exam_One\obj\Debug\Exam_One.exe
+C:\Users\Jay\source\repos\Exam_One\Exam_One\obj\Debug\Exam_One.pdb
