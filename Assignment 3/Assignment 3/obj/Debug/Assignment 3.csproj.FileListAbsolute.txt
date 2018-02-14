@@ -1,0 +1,7 @@
+C:\Users\Jay\source\repos\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe.config
+C:\Users\Jay\source\repos\Assignment 3\Assignment 3\bin\Debug\Assignment 3.exe
+C:\Users\Jay\source\repos\Assignment 3\Assignment 3\bin\Debug\Assignment 3.pdb
+C:\Users\Jay\source\repos\Assignment 3\Assignment 3\obj\Debug\Assignment 3.csprojResolveAssemblyReference.cache
+C:\Users\Jay\source\repos\Assignment 3\Assignment 3\obj\Debug\Assignment 3.csproj.CoreCompileInputs.cache
+C:\Users\Jay\source\repos\Assignment 3\Assignment 3\obj\Debug\Assignment 3.exe
+C:\Users\Jay\source\repos\Assignment 3\Assignment 3\obj\Debug\Assignment 3.pdb
