@@ -1,0 +1,7 @@
+c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\bin\Debug\assignment_5_djh.exe.config
+c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\bin\Debug\assignment_5_djh.exe
+c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\bin\Debug\assignment_5_djh.pdb
+c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.csprojResolveAssemblyReference.cache
+c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.csproj.CoreCompileInputs.cache
+c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.exe
+c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.pdb
