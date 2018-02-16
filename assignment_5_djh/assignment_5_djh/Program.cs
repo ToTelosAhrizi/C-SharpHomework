@@ -7,7 +7,7 @@ using static System.Console;
 
 
 /// <summary>
-/// Exercise 1, 3 and 6 for assignment 5dasfa
+/// Exercise 1, 3 and 6 for assignment 5
 /// </summary>
 namespace Assignment_5_DJH
 {
