@@ -1,7 +1,0 @@
-C:\Users\HarperD7\source\repos\Assignment_4_DJH\Assignment_4_DJH\bin\Debug\Assignment_4_DJH.exe.config
-C:\Users\HarperD7\source\repos\Assignment_4_DJH\Assignment_4_DJH\bin\Debug\Assignment_4_DJH.exe
-C:\Users\HarperD7\source\repos\Assignment_4_DJH\Assignment_4_DJH\bin\Debug\Assignment_4_DJH.pdb
-C:\Users\HarperD7\source\repos\Assignment_4_DJH\Assignment_4_DJH\obj\Debug\Assignment_4_DJH.csprojResolveAssemblyReference.cache
-C:\Users\HarperD7\source\repos\Assignment_4_DJH\Assignment_4_DJH\obj\Debug\Assignment_4_DJH.csproj.CoreCompileInputs.cache
-C:\Users\HarperD7\source\repos\Assignment_4_DJH\Assignment_4_DJH\obj\Debug\Assignment_4_DJH.exe
-C:\Users\HarperD7\source\repos\Assignment_4_DJH\Assignment_4_DJH\obj\Debug\Assignment_4_DJH.pdb
