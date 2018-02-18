@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 using static System.Console;
 
 namespace Assignment_4_DJH
-{/// <summary>
-/// The home base of the program is here. All of the display classes
-/// and the and their display/input methods a called here to run.
-/// </summary>
+{
+    /// <summary>
+    /// The home base of the program is here. All of the display classes
+    /// and the and their display/input methods a called here to run.
+    /// </summary>
     class Program
     {
 

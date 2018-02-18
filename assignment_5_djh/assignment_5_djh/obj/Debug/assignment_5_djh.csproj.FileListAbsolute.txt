@@ -5,3 +5,10 @@ c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\obj\Debug\assignment
 c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.csproj.CoreCompileInputs.cache
 c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.exe
 c:\users\jay\source\repos\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.pdb
+C:\Users\Jay\Documents\GitHub\Homework\assignment_5_djh\assignment_5_djh\bin\Debug\assignment_5_djh.exe.config
+C:\Users\Jay\Documents\GitHub\Homework\assignment_5_djh\assignment_5_djh\bin\Debug\assignment_5_djh.exe
+C:\Users\Jay\Documents\GitHub\Homework\assignment_5_djh\assignment_5_djh\bin\Debug\assignment_5_djh.pdb
+C:\Users\Jay\Documents\GitHub\Homework\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.csprojResolveAssemblyReference.cache
+C:\Users\Jay\Documents\GitHub\Homework\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.csproj.CoreCompileInputs.cache
+C:\Users\Jay\Documents\GitHub\Homework\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.exe
+C:\Users\Jay\Documents\GitHub\Homework\assignment_5_djh\assignment_5_djh\obj\Debug\assignment_5_djh.pdb
