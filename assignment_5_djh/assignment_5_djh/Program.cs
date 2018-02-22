@@ -18,7 +18,7 @@ namespace Assignment_5_DJH
     class Program
     {
         static void Main(string[] args)
-        {
+        {           
             RoNumDis.Display();//Exercise 1
             BMI.InputBMI();    //Exercise 3
             Area.AreaDisplay();//Exercise 6
