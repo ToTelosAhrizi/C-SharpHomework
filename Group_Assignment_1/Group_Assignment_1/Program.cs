@@ -13,10 +13,19 @@ namespace Group_Assignment_1
         public string line;
         public int lines;        
         static void Main(string[] args)
-        {            
-            Input();//Prog 5
+        {
+            //amelia's group
             Validate();//prog 1
-                       //prog 6
+            //prog 6
+
+            //doug's group
+            Input();//Prog 5
+            GPA();//prog 10
+
+            //chris' group
+            //prog 3
+            //prog 9
+                       
         }
         public static void Input()
         {
@@ -142,6 +151,65 @@ namespace Group_Assignment_1
             
 
 
+        }
+        public static void GPA()
+        {
+            
+            string again = "yes";
+            while (again == "yes")
+            {
+                WriteLine("This program will average out the grades you input\n" +
+                    "How many grades do you want to average?");
+                string line = ReadLine();
+                int.TryParse(line, out int lines);
+                int startl = 1;
+                List<double> grade = new List<double>();
+                if (lines > 0)
+                {
+                    
+                    WriteLine("Enter you letter grade for each class (A-D or a-d), make sure you have enough lines to enter\n" +
+                        "(entries that are not A-D or a-d will count as 0's)");
+                    while (startl <= lines)
+                    {
+                        int g;
+                        Write(startl + ". ");
+                        string grades = ReadLine();
+                        if (grades == "A" || grades == "a")
+                        {
+                            g = 4;
+                            grade.Add(g);
+                        }
+                        else if (grades == "B" || grades == "b")
+                        {
+                            g = 3;
+                            grade.Add(g);
+                        }
+                        else if (grades == "C" || grades == "c")
+                        {
+                            g = 2;
+                            grade.Add(g);
+                        }
+                        else if (grades == "D" || grades == "d")
+                        {
+                            g = 1;
+                            grade.Add(g);
+                        }
+                        else
+                        {
+                            g = 0;
+                            grade.Add(g);
+                        }
+                        startl++;
+                    }
+                    double gpa = grade.Average();
+                    Write("Your GPA is ");
+                    WriteLine("{0:n}",gpa);
+                    WriteLine("To go again, type yes. All other inputs will close");
+                    again = ReadLine();
+                }
+                    
+
+            }
         }
     }
 }
