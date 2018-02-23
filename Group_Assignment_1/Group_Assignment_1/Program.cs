@@ -27,52 +27,58 @@ namespace Group_Assignment_1
                     if (chtwo=="1")
                     {
                         Validate();//prog 1
+                        WriteLine("\n");
                     }
                     else if (chtwo == "2")
                     {
                         Hexedecimal();//prog 6
+                        WriteLine("\n");
                     }
                     else
                     {
-                        WriteLine("Invalid input.");                        
+                        WriteLine("Invalid input.\n");                        
                     }                    
                     WriteLine("Type yes to return main menue to run again, all else will close");
                     again = ReadLine();
                 }
                 else if (choice == "2") //doug's group
                 {
-                    WriteLine("Do you want to claculate the total cost of an online purchase(press 1), or calculate a gpa(press 2)?");
+                    WriteLine("Do you want to claculate the total cost of an online purchase(press 1), or calculate a gpa(press 2)?\n");
                     string chtwo = ReadLine();                   
                     if (chtwo == "1")
                     {
                         Input();//Prog 5
+                        WriteLine("\n");
                     }
                     else if (chtwo == "2")
                     {
                         GPA();//prog 10
+                        WriteLine("\n");
                     }
                     else
                     {
-                        WriteLine("Invalid input.");                        
+                        WriteLine("Invalid input.\n");                        
                     }
                     WriteLine("Type yes to return main menu, all else will close");
                     again = ReadLine();
                 }
                 else if (choice == "3")//chris' group
                 {
-                    WriteLine("Do you want to randomly generate numbers and see the info on them(press 1), or make a triangle(press 2)?");
+                    WriteLine("Do you want to randomly generate numbers and see the info on them(press 1), or make a triangle(press 2)?\n");
                     string chtwo = ReadLine();
                     if (chtwo=="1")
                     {
                         RNG();//prog 3
+                        WriteLine("\n");
                     }
                     else if (chtwo == "2")
                     {
                         WriteLine("Under Construction");//prog 10
+                        WriteLine("\n");
                     }
                     else
                     {
-                        WriteLine("Invalid input.");
+                        WriteLine("Invalid input.\n");
                     }
 
                 }
