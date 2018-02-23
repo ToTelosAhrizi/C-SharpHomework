@@ -3,25 +3,25 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 using System.Threading.Tasks;
 using static System.Console;
 
 namespace Group_Assignment_1
 {
     class Program
-    {
+    {        
         public string line;
         public int lines;        
         static void Main(string[] args)
-        {
-            string again = "Yes";
+        {            
+            string again = "Yes";            
             while (again == "yes" || again == "Yes")
             {
                 WriteLine("Press 1 for Amelia's group, 2 for Doug's group, 3  for Chris' group, all else to close.");
                 string choice = ReadLine();
-                if (choice == "1")
-                {
-                    //amelia's group
+                if (choice == "1") //amelia's group
+                {                   
                     WriteLine("Do you want to validate if input is between 0-100(press 1), or convert to hex(press 2)?");
                     string chtwo = ReadLine();
                     if (chtwo=="1")
@@ -34,38 +34,53 @@ namespace Group_Assignment_1
                     }
                     else
                     {
-                        WriteLine("Invalid input.");
-                        again = ReadLine();
+                        WriteLine("Invalid input.");                        
                     }                    
                     WriteLine("Type yes to return main menue to run again, all else will close");
                     again = ReadLine();
                 }
-                else if (choice == "2")
+                else if (choice == "2") //doug's group
                 {
                     WriteLine("Do you want to claculate the total cost of an online purchase(press 1), or calculate a gpa(press 2)?");
-                    string chtwo = ReadLine();
-                    //doug's group
-                    Input();//Prog 5
-                    GPA();//prog 10
-                    WriteLine("Type yes to return main menue to run again, all else will close");
+                    string chtwo = ReadLine();                   
+                    if (chtwo == "1")
+                    {
+                        Input();//Prog 5
+                    }
+                    else if (chtwo == "2")
+                    {
+                        GPA();//prog 10
+                    }
+                    else
+                    {
+                        WriteLine("Invalid input.");                        
+                    }
+                    WriteLine("Type yes to return main menu, all else will close");
                     again = ReadLine();
                 }
-                else if (choice == "3")
+                else if (choice == "3")//chris' group
                 {
-                    WriteLine("Under construction, comming soon");
-                    //chris' group
-                    //prog 3
-                    //prog 9
-                    WriteLine("Type yes to return main menue to run again, all else will close");
-                    again = ReadLine();
+                    WriteLine("Do you want to randomly generate numbers and see the info on them(press 1), or make a triangle(press 2)?");
+                    string chtwo = ReadLine();
+                    if (chtwo=="1")
+                    {
+                        RNG();//prog 3
+                    }
+                    else if (chtwo == "2")
+                    {
+                        WriteLine("Under Construction");//prog 10
+                    }
+                    else
+                    {
+                        WriteLine("Invalid input.");
+                    }
+
                 }
                 else
                 {
                     again = "no";
                 }
-            }
-            
-            
+            }                      
         }
         public static void Input()
         {
@@ -149,9 +164,7 @@ namespace Group_Assignment_1
         }
         public static void Validate()
         {
-            Program a = new Program();
-            
-            
+            Program a = new Program();            
             List<string> cost_list = new List<string>();
             string again = "yes";
             while (again == "yes")
@@ -164,7 +177,6 @@ namespace Group_Assignment_1
                 {
                     Write(startl + ". ");
                     string word = ReadLine();
-
                     if (int.TryParse(word, out int wd) && wd >= 0 && wd <= 100)
                     {
                         cost_list.Add(wd + " Valid");
@@ -176,10 +188,8 @@ namespace Group_Assignment_1
                     else
                     {
                         cost_list.Add(word + " Non-valid");
-                    }
-                    
-                    startl++;
-                    
+                    }                    
+                    startl++;                    
                 }
                 string group = string.Join("\n", cost_list.ToArray());
                 WriteLine("\n");
@@ -291,5 +301,44 @@ namespace Group_Assignment_1
             }
 
         }
+        public static void RNG()
+        {
+            string again = "yes";
+            while (again == "yes")
+            {
+                int nunum;
+                int counter = 1;
+                int odd_counter = 0;
+                int min = 100000;
+                int max = 0;
+                Random r = new Random();
+                while (counter < 1000)
+                {
+                    nunum = r.Next(0, 100000);
+                    if (nunum % 2 == 0)
+                    {
+                        counter++;
+                    }
+                    else
+                    {
+                        counter++;
+                        odd_counter++;
+                    }
+                    if (min > nunum)
+                    {
+                        min = nunum;
+                    }
+                    if (max < nunum)
+                    {
+                        max = nunum;
+                    }
+
+                }
+                MessageBox.Show("Total amout of odd numbers: " + odd_counter + "\nMax number is: " + max + "\nMin number is: " + min);
+                WriteLine("Type yes to go again, all else will return to main menu:");
+                again = ReadLine();
+            }
+        }
+        
     }
 }
