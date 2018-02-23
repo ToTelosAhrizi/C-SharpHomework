@@ -14,18 +14,58 @@ namespace Group_Assignment_1
         public int lines;        
         static void Main(string[] args)
         {
-            //amelia's group
-            Validate();//prog 1
-            //prog 6
-
-            //doug's group
-            Input();//Prog 5
-            GPA();//prog 10
-
-            //chris' group
-            //prog 3
-            //prog 9
-                       
+            string again = "Yes";
+            while (again == "yes" || again == "Yes")
+            {
+                WriteLine("Press 1 for Amelia's group, 2 for Doug's group, 3  for Chris' group, all else to close.");
+                string choice = ReadLine();
+                if (choice == "1")
+                {
+                    //amelia's group
+                    WriteLine("Do you want to validate if input is between 0-100(press 1), or convert to hex(press 2)?");
+                    string chtwo = ReadLine();
+                    if (chtwo=="1")
+                    {
+                        Validate();//prog 1
+                    }
+                    else if (chtwo == "2")
+                    {
+                        Hexedecimal();//prog 6
+                    }
+                    else
+                    {
+                        WriteLine("Invalid input.");
+                        again = ReadLine();
+                    }                    
+                    WriteLine("Type yes to return main menue to run again, all else will close");
+                    again = ReadLine();
+                }
+                else if (choice == "2")
+                {
+                    WriteLine("Do you want to claculate the total cost of an online purchase(press 1), or calculate a gpa(press 2)?");
+                    string chtwo = ReadLine();
+                    //doug's group
+                    Input();//Prog 5
+                    GPA();//prog 10
+                    WriteLine("Type yes to return main menue to run again, all else will close");
+                    again = ReadLine();
+                }
+                else if (choice == "3")
+                {
+                    WriteLine("Under construction, comming soon");
+                    //chris' group
+                    //prog 3
+                    //prog 9
+                    WriteLine("Type yes to return main menue to run again, all else will close");
+                    again = ReadLine();
+                }
+                else
+                {
+                    again = "no";
+                }
+            }
+            
+            
         }
         public static void Input()
         {
@@ -210,6 +250,46 @@ namespace Group_Assignment_1
                     
 
             }
+        }
+        public static void Hexedecimal()
+        {
+            
+            
+            
+            string again = "yes";
+            while (again == "yes")
+            {
+                WriteLine("This program will convert input to hex\n" +
+                    "How many inputs?");
+                string line = ReadLine();
+                int.TryParse(line, out int lines);
+                int startl = 1;
+                List<string> convert = new List<string>();
+                if (lines > 0)
+                {
+
+                    WriteLine("Enter what you want converted:");
+                    while (startl <= lines)
+                    {
+                        
+                        Write(startl + ". ");
+                        byte[] hex = Encoding.Default.GetBytes(ReadLine());
+                        var hexString = BitConverter.ToString(hex);
+                        convert.Add(hexString);
+                        startl++;
+                    }
+                    string hexout = string.Join(",\n",convert.ToArray());
+                    WriteLine(hexout);
+                    WriteLine("Type yes to go again, all else will close:");
+                    again =ReadLine();
+                }
+                else
+                {
+                    WriteLine("Invalid entry. Type yes to try again, all else will close:");
+                    again = ReadLine();
+                }
+            }
+
         }
     }
 }
