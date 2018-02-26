@@ -46,35 +46,35 @@ namespace Array
             double[,] grades = new double[5, 3];
 
             //showiung the input w/out using for statement
-            WriteLine("Enter the grades of the first student");
-            grades[0, 0] = double.Parse(ReadLine());
-            grades[0, 1] = double.Parse(ReadLine());
-            grades[0, 2] = double.Parse(ReadLine());
-            WriteLine("The grades of the first student is ");
-            Write(grades[0, 0] + " " + grades[0, 1] + " " + grades[0, 2] + "\n");
+            //WriteLine("Enter the grades of the first student");
+            //grades[0, 0] = double.Parse(ReadLine());
+            //grades[0, 1] = double.Parse(ReadLine());
+            //grades[0, 2] = double.Parse(ReadLine());
+            //WriteLine("The grades of the first student is ");
+            //Write(grades[0, 0] + " " + grades[0, 1] + " " + grades[0, 2] + "\n");
 
             //the prefered wat is to uyse the for loop to iterate through the array for reading the values from the user
-            for (int i = 0; i< 5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                for (int j = 0; j<3; j++)
+                for (int j = 0; j < 3; j++)
                 {
                     int s = i + 1;
                     int g = j + 1;
                     WriteLine("Enter student " + s + "grade " + g);
                     grades[i, j] = double.Parse(ReadLine());
                 }
-                
+
             }
             //output the array values
-            for(int i = 0; i<5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 int s = i + 1;
                 WriteLine("student" + s + " grades---------------------------------");
-                for(int j = 0; j<3; j++)
-                {
+                for (int j = 0; j < 3; j++)
+                {                    
                     Write(grades[i, j] + " ");
                 }
-                WriteLine();
+                ReadKey();
             }
         }
     }
