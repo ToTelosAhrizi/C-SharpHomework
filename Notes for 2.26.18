@@ -1,0 +1,82 @@
+using System;
+using static System.Console;
+
+namespace Array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //the first example will use single dimensional arra
+
+            //char[] /* <--vector*/ letters = new char[] { 'A', 'B', 'C', 'D', 'E' };
+            //foreach(char index in letters)
+            //{
+            //    switch (index)
+            //    {
+            //        case 'A':
+            //            {
+            //                WriteLine("A for Apples");
+            //                break;
+            //            }
+            //        case 'B':
+            //            {
+            //                WriteLine("B for Bananas");
+            //                break;
+            //            }
+            //        case 'C':
+            //            {
+            //                WriteLine("C for Cucumbers");
+            //                break;
+            //            }
+            //        case 'D':
+            //            {
+            //                WriteLine("D for Dill");
+            //                break;
+            //            }
+            //        case 'E':
+            //            {
+            //                WriteLine("E for Eggplant");
+            //                break;
+            //            }
+
+            //    }
+            //}
+            //ReadKey();
+            double[,] grades = new double[5, 3];
+
+            //showiung the input w/out using for statement
+            WriteLine("Enter the grades of the first student");
+            grades[0, 0] = double.Parse(ReadLine());
+            grades[0, 1] = double.Parse(ReadLine());
+            grades[0, 2] = double.Parse(ReadLine());
+            WriteLine("The grades of the first student is ");
+            Write(grades[0, 0] + " " + grades[0, 1] + " " + grades[0, 2] + "\n");
+
+            //the prefered wat is to uyse the for loop to iterate through the array for reading the values from the user
+            for (int i = 0; i< 5; i++)
+            {
+                for (int j = 0; j<3; j++)
+                {
+                    int s = i + 1;
+                    int g = j + 1;
+                    WriteLine("Enter student " + s + "grade " + g);
+                    grades[i, j] = double.Parse(ReadLine());
+                }
+                
+            }
+            //output the array values
+            for(int i = 0; i<5; i++)
+            {
+                int s = i + 1;
+                for(int j = 0; j<3; j++)
+                {
+                    WriteLine("student" + s + " grades---------------------------------");
+                    Write(grades[i, j] + " ");
+                }
+                WriteLine();
+            }
+        }
+    }
+}
+
