@@ -18,17 +18,18 @@ namespace Assignment_7
     {
         public string classes;
         public int cl;
+        public List<string> class_list = new List<string>();
+        public List<int> seats = new List<int>();
         public static void Input()
+
         {
             Data a = new Data();
             WriteLine("How many classes?");
             a.classes = ReadLine();
             int.TryParse(a.classes, out a.cl);
-            int startl = 1;
-            List<string> class_list = new List<string>();
-            List<int> seats = new List<int>();
-            class_list.Add("Class Name   Currect enrollment   Max enrollment");
-            seats.Add(0);
+            int startl = 1;            
+            a.class_list.Add("Class Name   Currect enrollment   Max enrollment");
+            a.seats.Add(0);
             while (startl <= a.cl)
             {
                 WriteLine("Enter class code for class "+ startl);
@@ -40,19 +41,24 @@ namespace Assignment_7
                 string max = ReadLine();
                 int.TryParse(max, out int m);
                 string entry = (code + " " + c + " " + m);
-                class_list.Add(entry);
+                a.class_list.Add(entry);
                 int space = m - c;
-                seats.Add(space);
+                a.seats.Add(space);
                 startl++;
             }
-            
-            string c_list = string.Join("\n",class_list.ToArray());
+
+            WriteLine(a.ToString());
+            ReadKey();
+        }
+        public override string ToString()
+        {
+            Data a = new Data();
+            string c_list = string.Join("\n", a.class_list.ToArray());
             WriteLine(c_list);
             WriteLine("Which input do you want to see?");
             string input = ReadLine();
             int.TryParse(input, out int i);
-            WriteLine("Number of seats left for that class is: "+ seats[i]);
-            ReadKey();
-        }  
+            return ("Number of seats left for that class is: " + seats[i]);            
+        }
     }
 }
