@@ -26,7 +26,9 @@ namespace Assignment_7
             int.TryParse(a.classes, out a.cl);
             int startl = 1;
             List<string> class_list = new List<string>();
+            List<int> seats = new List<int>();
             class_list.Add("Class Name   Currect enrollment   Max enrollment");
+            seats.Add(0);
             while (startl <= a.cl)
             {
                 WriteLine("Enter class code for class "+ startl);
@@ -39,12 +41,18 @@ namespace Assignment_7
                 int.TryParse(max, out int m);
                 string entry = (code + " " + c + " " + m);
                 class_list.Add(entry);
+                int space = m - c;
+                seats.Add(space);
                 startl++;
             }
+            
             string c_list = string.Join("\n",class_list.ToArray());
             WriteLine(c_list);
-            
+            WriteLine("Which input do you want to see?");
+            string input = ReadLine();
+            int.TryParse(input, out int i);
+            WriteLine("Number of seats left for that class is: "+ seats[i]);
             ReadKey();
-        }
+        }  
     }
 }
