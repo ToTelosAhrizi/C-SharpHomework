@@ -28,7 +28,7 @@ namespace Exam_Three
                     string cus_pn = ReadLine();
                     WriteLine("Enter Balance");
                     string cus_bal = ReadLine();
-                    Bank a = new Bank(cus_fn, cus_ln, cus_ln, cus_ln);
+                    Bank a = new Bank(cus_fn, cus_ln, cus_pn, cus_bal);
 
                     bank.Add(a);
                 }
@@ -36,7 +36,7 @@ namespace Exam_Three
                 {
                     WriteLine("Which one? enter its entry number");
                     int.TryParse(ReadLine(), out int rem);
-                    bank.RemoveAt(rem);
+                    bank.RemoveAt(rem-1);
                 }
                 else if (choice.Equals("3"))
                 {
@@ -60,14 +60,14 @@ namespace Exam_Three
     { 
         public Bank(string cfn, string cln, string pn, string bal)
         {
-            string first_name = cfn;
-            string last_name = cln;
-            string phone = pn;
-            string balance = bal;
+            string cus_fn = cfn;
+            string cus_ln = cln;
+            string cus_pn = pn;
+            string cus_bal = bal;
         }
         public override string ToString()
         {
-           
+            
             return base.ToString();
         }
 
