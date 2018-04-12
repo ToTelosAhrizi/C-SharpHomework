@@ -51,24 +51,31 @@ namespace Exam_Three
         }
         static void Display_Account()
         {
-            string hi = string.Join("\n", Program.bank.ToString());
-
-            WriteLine(hi);
+            int index = 1;
+            foreach (Bank account in bank)
+            {
+                WriteLine(index+". "+account.ToString());
+            }
         }
     }
     class Bank
-    { 
+    {
+        string cus_fn;
+        string cus_ln;
+        string cus_pn;
+        string cus_bal;
         public Bank(string cfn, string cln, string pn, string bal)
         {
-            string cus_fn = cfn;
-            string cus_ln = cln;
-            string cus_pn = pn;
-            string cus_bal = bal;
+            cus_fn = cfn;
+            cus_ln = cln;
+            cus_pn = pn;
+            cus_bal = bal;
         }
         public override string ToString()
         {
-            
-            return base.ToString();
+
+            string hi =cus_fn+" "+cus_ln+" "+cus_pn+" "+cus_bal;
+            return hi;
         }
 
     }
