@@ -55,6 +55,7 @@ namespace Exam_Three
             foreach (Bank account in bank)
             {
                 WriteLine(index+". "+account.ToString());
+                index++;
             }
         }
     }
